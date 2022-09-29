@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="stylesheet" href="./assets/css/normalize.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,12 +27,13 @@
                         <a href="./portfolio.html">Портфоліо</a>
                     </li>
 
-                <ul>
                     <li>
-                         <a href="">Контакти</a>
+                         <a href="#">Контакти</a>
                     </li>
+
                 </ul>
 
+                <ul class="contact">
                     <li>
                         <a href="mailto:info@example.com">info@example.com</a>
                     </li>
@@ -40,7 +43,7 @@
                     </li>
                 </ul>
                 
-    </header>
+            </header>
             
             
     <main>
@@ -58,22 +61,22 @@
             <ul class="service_list">
                 <li class="service_list_item">
                     <h3>Увага до діталей</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sint optio dolores dignissimos blanditiis sed placeat? Nemo voluptatibus minus hic labore deleniti maxime repellat, ratione animi dolorum commodi quidem voluptatum!</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sint optio dolores dignissimos blanditiis sed placeat? Nemo voluptatibus minus hic labore deleniti maxime repellat, ratione animi dolorum commodi quidem voluptatum!</p>
                 </li>
 
                 <li class="service_list_item">
                     <h3>Пунктуальність</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sint optio dolores dignissimos blanditiis sed placeat? Nemo voluptatibus minus hic labore deleniti maxime repellat, ratione animi dolorum commodi quidem voluptatum!</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sint optio dolores dignissimos blanditiis sed placeat? Nemo voluptatibus minus hic labore deleniti maxime repellat, ratione animi dolorum commodi quidem voluptatum!</p>
                 </li>
 
                 <li class="service_list_item">
                     <h3>Планування</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sint optio dolores dignissimos blanditiis sed placeat? Nemo voluptatibus minus hic labore deleniti maxime repellat, ratione animi dolorum commodi quidem voluptatum!</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sint optio dolores dignissimos blanditiis sed placeat? Nemo voluptatibus minus hic labore deleniti maxime repellat, ratione animi dolorum commodi quidem voluptatum!</p>
                 </li>
 
                 <li class="service_list_item">
                     <h3>Технології</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sint optio dolores dignissimos blanditiis sed placeat? Nemo voluptatibus minus hic labore deleniti maxime repellat, ratione animi dolorum commodi quidem voluptatum!</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sint optio dolores dignissimos blanditiis sed placeat? Nemo voluptatibus minus hic labore deleniti maxime repellat, ratione animi dolorum commodi quidem voluptatum!</p>
                 </li>
             </ul>
         </section>
@@ -82,7 +85,7 @@
 
         <section class="photos">
         
-                <h2>Чим ми займаємось?</h2>
+                <h2 class="photo_title">Чим ми займаємось?</h2>
                 <ul>
                     <li><img src="./assets/img/img1.png" alt="item"></li>
                     <li><img src="./assets/img/img3.png" alt="item"></li>
@@ -94,12 +97,12 @@
 
         <section class="team">
             
-                    <h2>Наша команда</h2>
+                    <h2 class="photo_title">Наша команда</h2>
                     <ul>
                         <li>
                                 <img src="./assets/img/img4.png" alt="person">
-                                <h3>Егор Дем'яненко</h3>
-                                <p>Product Designer</p>
+                                <h3 class="person">Егор Дем'яненко</h3>
+                                <p class="product">Product Designer</p>
 
                                 <ul>
                                     <li>
@@ -113,22 +116,22 @@
                     
                         <li>
                                 <img src="./assets/img/img5.png" alt="person">
-                                <h3>Ольга Репіна</h3>
-                                <p>Frontend Developer</p>
+                                <h3 class="person">Ольга Репіна</h3>
+                                <p class="product">Frontend Developer</p>
                         </li>
                         
         
                         <li>
                                 <img src="./assets/img/img6.png" alt="person">
-                                <h3>Микола Тарасов</h3>
-                                <p>Marketing</p>
+                                <h3 class="person">Микола Тарасов</h3>
+                                <p class="product">Marketing</p>
                         </li>
                         
                     
                         <li>
                                 <img src="./assets/img/img7.png" alt="person">
-                                <h3>Михайло Єрмаков</h3>
-                                <p>UI Designer</p>
+                                <h3 class="person">Михайло Єрмаков</h3>
+                                <p class="product">UI Designer</p>
                         </li>
                     </ul>
 
@@ -138,10 +141,10 @@
     </main>
 
     <footer>
-        <h2><span>Web</span>Studio</h2>
-        <address>г. Киев, пр-т Леси Украинки, 26</address>
-        <a href="mailto:info@example.com">info@example.com</a>
-        <a href="tel:+380991111111">+38 099 111 11 11</a>
+        <h2 class="btn"><span>Web</span>Studio</h2>
+        <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+        <a class="contact" href="mailto:info@example.com">info@example.com</a>
+        <a class="contact" href="tel:+380991111111">+38 099 111 11 11</a>
     </footer>
 
 </body>

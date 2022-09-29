@@ -1,0 +1,40 @@
+.btn {
+    font-family: 'Raleway';
+    color: #000000;
+}
+
+.nav {
+    font-family: 'Roboto';
+    color: #212121;
+}
+
+.contact {
+    font-family: 'Roboto';
+    color: #757575;
+}
+
+.intro_title {
+    font-family: 'Roboto';
+    color: #FFFFFF;
+}
+
+.service_list_item, .person {
+    font-family: 'Roboto';
+    color: #212121;
+}
+
+.text, .product {
+    font-family: 'Roboto';
+    color: #757575;
+}
+
+.photo_title {
+    font-family: 'Roboto';
+    color: #212121;
+}
+
+address {
+    font-family: 'Roboto';
+    color: #757575;
+}
+
