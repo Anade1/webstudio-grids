@@ -1,18 +1,23 @@
+body {
+    font-family: 'Roboto';
+}
+
+
 .btn {
     font-family: 'Raleway';
     color: #000000;
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
 
     letter-spacing: 0.03em;
+
+    text-decoration: none;
 }
 
 span {
     font-family: 'Raleway';
     color: #2196F3;
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
@@ -21,30 +26,28 @@ span {
 }
 
 .nav {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
 
     color: #212121;
+
+    text-decoration: none;
 }
 
 .contact {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
 
     color: #757575;
+
+    text-decoration: none;
 }
 
 .filter {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -56,8 +59,6 @@ span {
 }
 
 .group {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
@@ -67,8 +68,6 @@ span {
 }
 
 .group_text {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
@@ -78,8 +77,6 @@ span {
 }
 
 address {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
