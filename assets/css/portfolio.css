@@ -8,7 +8,7 @@ body {
     color: #000000;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1,192307692307692;;
 
     letter-spacing: 0.03em;
 
@@ -20,7 +20,7 @@ span {
     color: #2196F3;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1,192307692307692%;
 
     letter-spacing: 0.03em;
 }
@@ -28,29 +28,41 @@ span {
 .nav {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1,142857142857143%;
     letter-spacing: 0.02em;
+    cursor: pointer;
 
     color: #212121;
 
     text-decoration: none;
 }
 
+.nav:hover {
+    color: #2196F3;
+    transition: all 0.4s ease;
+}
+
 .contact {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1,142857142857143%;
     letter-spacing: 0.02em;
+    cursor: pointer;
 
     color: #757575;
 
     text-decoration: none;
 }
 
+.contact:hover {
+    color: #2196F3;
+    transition: all 0.4s ease;
+}
+
 .filter {
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1,625%;
     
     text-align: center;
     letter-spacing: 0.03em;
@@ -58,10 +70,22 @@ span {
     color: #212121;
 }
 
+.button {
+    background: #F5F4FA;
+    cursor: pointer;
+    border: none;
+}
+
+.button:hover {
+    color: #FFFFFF;
+    background: #2196F3;
+    transition: all 0.4s ease;
+}
+
 .group {
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2%;
     letter-spacing: 0.06em;
 
     color: #212121;
@@ -70,7 +94,7 @@ span {
 .group_text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1,875%;
     letter-spacing: 0.03em;
     
     color: #757575;
@@ -79,7 +103,7 @@ span {
 address {
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1,714285714285714%;
     letter-spacing: 0.03em;
 
     color: #FFFFFF;
