@@ -11,12 +11,25 @@ body {
     color: #000000;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1,192307692307692%;
+    line-height: 1,19%;
 
     letter-spacing: 0.03em;
 
     text-decoration: none;
 }
+
+.btn-footer {
+    font-family: 'Raleway';
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,19%;
+
+    letter-spacing: 0.03em;
+
+    text-decoration: none;
+}
+
 
 span {
 
@@ -24,23 +37,42 @@ span {
     color: #2196F3;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1,192307692307692%;
+    line-height: 1,19%;
 
     letter-spacing: 0.03em;
+}
+
+.list {
+    list-style: none;
+    
+}
+
+.service-list {
+    list-style: none;
+}
+
+.images-list {
+    list-style: none;
+}
+
+.person-list {
+    list-style: none;
+}
+
+.svg-list {
+    list-style: none;
 }
 
 .nav {
 
     font-weight: 500;
     font-size: 14px;
-    line-height: 1,142857142857143%;
+    line-height: 1,14%;
     letter-spacing: 0.02em;
     cursor: pointer;
-
     color: #212121;
 
     text-decoration: none;
-
 
 }
 
@@ -55,9 +87,10 @@ span {
 
     font-weight: 500;
     font-size: 14px;
-    line-height: 1,142857142857143%;
+    line-height: 1,14%;
     letter-spacing: 0.02em;
     cursor: pointer;
+    
 
     color: #757575;
 
@@ -67,6 +100,12 @@ span {
 .contact:hover {
     color: #2196F3;
     transition: all 0.4s ease;
+}
+
+.contact-footer {
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .intro {
@@ -83,7 +122,7 @@ span {
 
     font-weight: 900;
     font-size: 44px;
-    line-height: 1,363636363636364%;
+    line-height: 1,36%;
     
     text-align: center;
     letter-spacing: 0.06em;
@@ -114,7 +153,7 @@ button {
 
     font-weight: 700;
     font-size: 14px;
-    line-height: 1,142857142857143%;
+    line-height: 1,14%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -125,7 +164,7 @@ button {
 
     font-weight: 400;
     font-size: 14px;
-    line-height: 1,714285714285714%;
+    line-height: 1,71%;
     letter-spacing: 0.03em;
 
     color: #757575;
@@ -135,7 +174,7 @@ button {
 
     font-weight: 700;
     font-size: 36px;
-    line-height: 1,166666666666667%;
+    line-height: 1,16%;
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -146,10 +185,14 @@ address {
 
     font-weight: 400;
     font-size: 14px;
-    line-height: 1,714285714285714%;
+    line-height: 1,71%;
     letter-spacing: 0.03em;
 
     color: #FFFFFF;  
+}
+
+footer {
+    background: #2F303A;
 }
 
 
