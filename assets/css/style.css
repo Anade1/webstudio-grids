@@ -81,6 +81,8 @@ span {
     color: #757575;
     
     text-decoration: none;
+
+    margin-left: 55px;
 }
 
 .header-nav:hover {
