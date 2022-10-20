@@ -2,37 +2,26 @@ body {
     font-family: 'Roboto';
 }
 
+        /* HEADER */
 
-.btn {
+header {
+    outline: 2px solid gold;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+        /* logo */
+
+.header-logo {
     font-family: 'Raleway';
     color: #000000;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-
+    
     letter-spacing: 0.03em;
-
+    
     text-decoration: none;
-}
-
-.btn-footer {
-    font-family: 'Raleway';
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-
-    letter-spacing: 0.03em;
-
-    text-decoration: none;
-}
-
-.list {
-    list-style: none;
-}
-
-.item-list {
-    list-style: none;
 }
 
 span {
@@ -41,25 +30,33 @@ span {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-
+    
     letter-spacing: 0.03em;
 }
 
-.nav {
+        /* nav-menu */
+
+.header-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+        
+.contact-list {
+    display: flex;
+    justify-content: center;
+}
+
+.header-nav {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     cursor: pointer;
-
+    
     color: #212121;
-
+    
     text-decoration: none;
-}
-
-.nav:hover {
-    color: #2196F3;
-    transition: all 0.4s ease;
 }
 
 .contact {
@@ -68,16 +65,44 @@ span {
     line-height: 1.14;
     letter-spacing: 0.02em;
     cursor: pointer;
-
+    
     color: #757575;
-
+    
     text-decoration: none;
+}
+
+.nav:hover {
+    color: #2196F3;
+    transition: all 0.4s ease;
 }
 
 .contact:hover {
     color: #2196F3;
     transition: all 0.4s ease;
 }
+
+
+
+
+
+.item-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item-list-image {
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.item-list-image:nth-child(3n) {
+    margin-right: 0;
+}
+
+
 
 .contact-footer {
     list-style: none;
@@ -95,12 +120,17 @@ span {
     list-style: none;
     
     color: #212121;
+
+    display: flex;
+    justify-content: center;
 }
 
 .button {
     background: #F5F4FA;
     cursor: pointer;
     border: none;
+
+    margin-left: 8px;
 }
 
 .button:hover {
@@ -114,7 +144,7 @@ span {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-
+    
     color: #212121;
 }
 
@@ -132,10 +162,22 @@ address {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-
+    
     color: #FFFFFF;
 }
 
 footer {
     background: #2F303A;
+}
+
+.btn-footer {
+    font-family: 'Raleway';
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    letter-spacing: 0.03em;
+
+    text-decoration: none;
 }
