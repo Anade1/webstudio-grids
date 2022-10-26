@@ -4,8 +4,12 @@ body {
 
         /* HEADER */
 
+ header .container {
+    display: flex;
+}
+
+
 header {
-    outline: 2px solid gold;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -45,6 +49,7 @@ span {
 .contact-list {
     display: flex;
     justify-content: center;
+    margin-left: auto;
 }
 
 .header-nav {
@@ -94,6 +99,8 @@ span {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
+    padding-bottom: 94px;
 }
 
 .item-list-image {
@@ -108,10 +115,29 @@ span {
 
 
 
-.contact-footer {
+.contact-list-footer {
     list-style: none;
     display: flex;
     flex-flow: column wrap;
+
+    padding-bottom: 51px;
+}
+
+.contact-footer {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    
+    
+    color: #757575;
+    
+    text-decoration: none;
+}
+
+.contact-footer-li {
+    margin-bottom: 9px;
 }
 
 .filter {
@@ -127,6 +153,9 @@ span {
 
     display: flex;
     justify-content: center;
+
+    padding-top: 94px;
+    padding-bottom: 34px;
 }
 
 .button {
@@ -180,8 +209,9 @@ footer {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-
     letter-spacing: 0.03em;
-
     text-decoration: none;
+
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
