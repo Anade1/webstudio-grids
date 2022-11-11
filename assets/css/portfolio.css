@@ -117,7 +117,7 @@ span {
     justify-content: center;
             
     padding-top: 94px;
-    padding-bottom: 34px;
+    padding-bottom: 50px;
 }
             
 .filter-button {
@@ -139,6 +139,7 @@ span {
     padding-right: 22px;
     padding-left: 22px;
     margin-left: 8px;
+    border-radius: 4px;
 }
             
 .filter-button:hover {
@@ -161,7 +162,6 @@ span {
 
 .project-image {
     width: 370px;
-    margin-right: 30px;
     margin-bottom: 30px;
 }
 
@@ -176,6 +176,7 @@ span {
     letter-spacing: 0.06em;
     
     color: #212121;
+    padding-left: 24px;
 }
 
 .project-text {
@@ -185,13 +186,36 @@ span {
     letter-spacing: 0.03em;
     
     color: #757575;
+    padding-left: 24px;
+    padding-bottom: 20px;
+}
+
+
+.project-portfolio {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
+}
+
+.project-portfolio:nth-child(1) {
+    margin-left: 0;
+}
+
+.project-portfolio:nth-child(4) {
+    margin-left: 0;
+}
+
+.project-portfolio:nth-child(7) {
+    margin-left: 0;
 }
 
 
 
             /* FOOTER */
             
-footer {
+.footer-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: #2F303A;
 }
             
@@ -199,8 +223,6 @@ footer {
     list-style: none;
     display: flex;
     flex-flow: column wrap;
-                
-    padding-bottom: 51px;
 }
             
 .footer-contact {
@@ -218,13 +240,19 @@ footer {
     margin-bottom: 9px;
 }
 
+.footer-contact-li:nth-child(2) {
+    margin-bottom: 0;
+}
+
 .footer-address {
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     
     color: #FFFFFF;
+    margin-bottom: 9px;
 }
 
 .footer-button {
@@ -236,6 +264,5 @@ footer {
     letter-spacing: 0.03em;
     text-decoration: none;
 
-    padding-top: 60px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
