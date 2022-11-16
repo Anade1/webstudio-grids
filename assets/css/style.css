@@ -107,7 +107,7 @@ span {
             /* HERO-SECTION */
 
 .hero-section {
-    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/assets/img/index.img/hero.jpg);
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/studio/hero.jpg);
 }
 
 .hero_title {
@@ -155,6 +155,53 @@ span {
 
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.service-box {
+    width: 270px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.service-box:nth-child(1) {
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../img/studio/antenna\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-box:nth-child(2) {
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../img/studio/clock\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-box:nth-child(3) {
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../img/studio/diagram\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-box:nth-child(4) {
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../img/studio/astronaut\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .service-text {
