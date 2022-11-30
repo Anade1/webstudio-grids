@@ -32,7 +32,7 @@ header .container {
     
 }
 
-span {
+.logo-color {
     
     font-family: 'Raleway';
     color: #2196F3;
@@ -102,6 +102,10 @@ span {
     transition: all 0.4s ease;
 }
 
+.header-svg {
+    margin-right: 10px;
+    color: #757575;
+}
 
 
             /* HERO-SECTION */
@@ -157,51 +161,33 @@ span {
     padding-bottom: 94px;
 }
 
-.service-box {
+.service-item::before {
+    content: '';
     width: 270px;
     height: 120px;
-    align-items: center;
-    justify-content: center;
 
     margin-bottom: 30px;
-    background: #F5F4FA;
+    background-color: #F5F4FA;
     border-radius: 4px;
-}
-
-.service-box:nth-child(1) {
-    justify-content: center;
-    align-items: center;
-
-    background-image: url(../img/studio/antenna\ 1.png);
     background-repeat: no-repeat;
     background-position: center;
+    display: block;
 }
 
-.service-box:nth-child(2) {
-    justify-content: center;
-    align-items: center;
-
-    background-image: url(../img/studio/clock\ 1.png);
-    background-repeat: no-repeat;
-    background-position: center;
+.service-item:nth-child(1)::before {
+    background-image: url(../img/studio/antenna.png);
 }
 
-.service-box:nth-child(3) {
-    justify-content: center;
-    align-items: center;
-
-    background-image: url(../img/studio/diagram\ 1.png);
-    background-repeat: no-repeat;
-    background-position: center;
+.service-item:nth-child(2)::before {
+    background-image: url(../img/studio/clock.png);
 }
 
-.service-box:nth-child(4) {
-    justify-content: center;
-    align-items: center;
+.service-item:nth-child(3)::before {
+    background-image: url(../img/studio/diagram.png);
+}
 
-    background-image: url(../img/studio/astronaut\ 1.png);
-    background-repeat: no-repeat;
-    background-position: center;
+.service-item:nth-child(4)::before {
+    background-image: url(../img/studio/astronaut.png);
 }
 
 .service-text {
@@ -311,6 +297,70 @@ span {
 .team-portfolio:nth-child(1) {
     margin-left: 0;
 }
+
+
+.team-list-svg {
+    display: flex;
+    justify-content: center;
+}
+
+.team-svg {
+    margin-left: 34px;
+    margin-top: 28px;
+    color: #AFB1B8;
+}
+
+.team-svg:nth-child(1) {
+    margin-left: 44px;
+}
+
+.team-svg:nth-child(4) {
+    margin-right: 44px;
+}
+
+            /* SVG-SECTION */
+
+.svg-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+
+    padding-top: 94px;
+}
+
+.svg-list {
+    display: flex;
+    justify-content: center;
+}
+
+.svg-picture {
+    box-sizing: border-box;
+    margin-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 94px;
+}
+
+.svg-border {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 65px;
+    padding-left: 65px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.svg-picture:nth-child(1) {
+    margin-left: 215px;
+}
+
+.svg-picture:nth-child(6) {
+    margin-right: 215px;
+}
+
 
 
             /* FOOTER-SECTION */
