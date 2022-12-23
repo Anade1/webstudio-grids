@@ -67,8 +67,62 @@
         <section class="hero-section">
             <div class="container">
                 <h1 class="hero_title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="hero-button" type="button">Замовити послугу</button>
+                <button class="hero-button" type="button" data-open-modal>Замовити послугу</button>
             </div>
+
+                <div class="backdrop is-hidden" data-backdrop>
+                    <div class="modal-window">
+                       <button class="modal-btn"  type="button" data-close-modal>
+                            <svg class="modal-svg" width="11" height="11">
+                                <use href="./assets/img/symbol-defs.svg#icon-close"></use>
+                            </svg>
+                       </button>
+                        <p class="modal-text">Залиште свої дані, ми Вам зателефонуємо</p>
+
+                        <ul class="modal-list">
+                            <li>
+                                <label>Ім’я</label>
+                            </li>
+                            <li class="modal-item">
+                                <input type="text">
+                            </li>
+
+
+                            <li>
+                                <label>Телефон</label>
+                            </li>
+                            <li class="modal-item">
+                                <input type="text">
+                            </li>
+
+
+                            <li>
+                                <label>Пошта</label>
+                            </li>
+                            <li class="modal-item">
+                                <input type="text">
+                            </li>
+
+                            <li>
+                                <label>Коментарі</label>
+                            </li>
+                            <li class="modal-item">
+                                <input type="text">
+                            </li>
+                        </ul>
+
+                        <ul class="chekbox-list">
+                            <li class="checkbox-item">
+                                <input type="checkbox">
+                                <label>Погоджуюсь з розсилкою і приймаю <a>Умови договору</a></label>
+                            </li>
+                        </ul>
+
+                        <button class="modal-button" type="button">Надіслати</button>
+
+                    </div>
+                </div>
+            
         </section>
 
 
@@ -119,16 +173,19 @@
                 <div class="container">
                     <h2 class="photo-title">Чим ми займаємось?</h2>
                     <ul class="photo-list">
-                        <li class="">
-                            <img class="photo-item" src="./assets/img/studio/photo-pc.jpg" alt="item">
+                        <li class="photo-item">
+                            <img class="photo-img" src="./assets/img/studio/photo-pc.jpg" alt="item">
+                            <h3 class="photo-subtitle">Декстопні Застосунки</h3>
                         </li>
 
-                        <li class="">
-                            <img class="photo-item" src="./assets/img/studio/photo-tel.jpg" alt="item">
+                        <li class="photo-item">
+                            <img class="photo-img" src="./assets/img/studio/photo-tel.jpg" alt="item">
+                            <h3 class="photo-subtitle">Мобільні Застосунки</h3>
                         </li>
 
-                        <li class="">
-                            <img class="photo-item" src="./assets/img/studio/photo-pad.jpg" alt="item">
+                        <li class="photo-item">
+                            <img class="photo-img" src="./assets/img/studio/photo-pad.jpg" alt="item">
+                            <h3 class="photo-subtitle">Дизайнерські Рішення</h3>
                         </li>
                     </ul>
                 </div>
@@ -370,6 +427,26 @@
             
         </div>
     </footer>
-    
+
+    <script>
+        const refs = {
+          openModalBtn: document.querySelector("[data-open-modal]"),
+          closeModalBtn: document.querySelector("[data-close-modal]"),
+          backdrop: document.querySelector("[data-backdrop]"),
+        };
+  
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+  
+        refs.backdrop.addEventListener("click", logBackdropClick);
+  
+        function toggleModal() {
+          refs.backdrop.classList.toggle("is-hidden");
+        }
+  
+        function logBackdropClick() {
+          console.log("Це клік в бекдроп");
+        }
+      </script>
 </body>
 </html>
