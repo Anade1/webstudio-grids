@@ -71,7 +71,7 @@
             </div>
 
                 <div class="backdrop is-hidden" data-backdrop>
-                    <div class="modal-window">
+                    <form class="modal-window">
                        <button class="modal-btn"  type="button" data-close-modal>
                             <svg class="modal-svg" width="11" height="11">
                                 <use href="./assets/img/symbol-defs.svg#icon-close"></use>
@@ -80,47 +80,42 @@
                         <p class="modal-text">Залиште свої дані, ми Вам зателефонуємо</p>
 
                         <ul class="modal-list">
-                            <li>
-                                <label>Ім’я</label>
-                            </li>
+                        
                             <li class="modal-item">
-                                <input type="text">
+                                <label class="modal-label" for="name">Ім’я</label>
+                                <input class="modal-input" type="text" id="name" required>
+                                <svg width="18" height="18">
+                                    <use href="./assets/img/symbol-defs.svg#icon-person"></use>
+                                </svg>
+
                             </li>
 
-
-                            <li>
-                                <label>Телефон</label>
-                            </li>
                             <li class="modal-item">
-                                <input type="text">
+                                <label class="modal-label" for="tel">Телефон</label>
+                                <input class="modal-input" type="text" id="tel" required>
                             </li>
 
-
-                            <li>
-                                <label>Пошта</label>
-                            </li>
                             <li class="modal-item">
-                                <input type="text">
+                                <label class="modal-label" for="email">Пошта</label>
+                                <input class="modal-input" type="text" id="email" required>
                             </li>
 
-                            <li>
-                                <label>Коментарі</label>
-                            </li>
                             <li class="modal-item">
-                                <input type="text">
+                                <label class="modal-label" for="comment">Коментарі</label>
+                                <textarea class="modal-textarea" id="comment" placeholder="Введите текст"></textarea>
                             </li>
                         </ul>
 
                         <ul class="chekbox-list">
                             <li class="checkbox-item">
                                 <input type="checkbox">
-                                <label>Погоджуюсь з розсилкою і приймаю <a>Умови договору</a></label>
+                                <label>Погоджуюсь з розсилкою і приймаю <a href="#">Умови договору</a></label>
                             </li>
                         </ul>
 
-                        <button class="modal-button" type="button">Надіслати</button>
+                        <button class="modal-button" type="submit">Надіслати</button>
 
-                    </div>
+                    </form>
                 </div>
             
         </section>

@@ -210,6 +210,7 @@ header .container {
     border: 1px solid rgba(0, 0, 0, 0.1);
     margin-top: 8px;
     margin-right: 8px;
+    cursor: pointer;
 }
 
 .modal-btn:hover {
@@ -229,6 +230,41 @@ header .container {
     justify-content: center;
     margin-bottom: 12px;
 }
+
+.modal-textarea {
+    display: block;
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px; 
+    resize: none;
+    margin-top: 4px;
+}
+
+.modal-textarea::placeholder {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    /* margin-top: 12px;
+    margin-left: 16px; */
+
+    color: rgba(117, 117, 117, 0.5);
+}
+
+
+.modal-input {
+    display: block;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+
+
 
 .modal-list {
     margin-left: 40px;
@@ -250,7 +286,7 @@ header .container {
 .checkbox-item {
     margin-left: 52px;
     margin-right: 52px;
-    padding-top: 20px;
+    /* padding-top: 10px; */
 }
 
 .modal-button {
@@ -273,6 +309,7 @@ header .container {
     border-radius: 4px;
     margin-right: 164px;
     margin-left: 159px;
+    /* margin-bottom: 50px; */
     
 }
 
@@ -355,6 +392,7 @@ header .container {
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
 
     color: #FFFFFF;
 }
@@ -468,6 +506,7 @@ header .container {
     height: 44px;
     width: 44px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .team-item:hover {
@@ -516,6 +555,7 @@ header .container {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: #AFB1B8;
+    cursor: pointer;
 
 }
 
@@ -625,6 +665,7 @@ header .container {
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .footer-item:hover {
