@@ -205,7 +205,7 @@ body {
     transition: 0.3s;
     cursor: pointer;
 
-    transform: translate(-100%, -100%);
+    /* transform: translate(-100%, -100%); */
 }
 
 .project-portfolio {
