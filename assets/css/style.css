@@ -62,17 +62,24 @@ header .container {
 }
 
 .header-item {
-    position: relative;
-    overflow: hidden;
+    
 }
 
-.header-item:hover>.header-hr {
-    opacity: 1;
+.current::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: -33px;
+    left: 0;
+    background-color: #2196F3;
+    border-radius: 5px;
+    transition: 250ms;
+    
 }
 
-.header-item:hover {
-    transform: scale(1);
-}
+
 
 .header-text {
     
@@ -82,7 +89,7 @@ header .container {
     letter-spacing: 0.02em;
     cursor: pointer;
     color: #212121;
-    
+    position: relative;
     text-decoration: none;
     
     margin-left: 55px;
@@ -106,20 +113,6 @@ header .container {
 }
 
 
-.header-hr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    background: #2196F3;
-    width: 48px;
-    height: 4px;
-    opacity: 0;
-    transition: 0.3s;
-
-    top: 0;
-    left: 0;
-}
 
 .header-text:hover {
     color: #2196F3;
@@ -155,12 +148,13 @@ header .container {
 
 .hero-section {
     background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/studio/hero.jpg);
-    width: 1600px;
-    height: 600px;
+    max-width: 1600px;
 }
 
 .hero_title {
-
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -171,8 +165,6 @@ header .container {
     
     color: #FFFFFF;
 
-    padding-right: 237px;
-    padding-left: 237px;
 
 }
 
@@ -218,7 +210,6 @@ header .container {
 
 .modal-window {
     width: 528px;
-    height: 581px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -252,6 +243,12 @@ header .container {
     transition: all 0.4s ease;
 }
 
+.modal-icon {
+    position: absolute;
+    bottom: 14px;
+    left: 15px;
+}
+
 .modal-text {
     font-weight: 700;
     font-size: 20px;
@@ -273,7 +270,10 @@ header .container {
     border-radius: 4px; 
     resize: none;
     margin-top: 4px;
+    padding-top: 12px;
+    padding-left: 16px;
 }
+
 
 .modal-textarea::placeholder {
     font-family: 'Roboto';
@@ -307,9 +307,10 @@ header .container {
 
 .modal-item {
     margin-bottom: 10px;
+    position: relative;
 }
 
-.modal-item:nth-child(1) {
+.modal-item:last-child {
     margin-bottom: 0;
 }
 
@@ -320,7 +321,7 @@ header .container {
 .checkbox-item {
     margin-left: 52px;
     margin-right: 52px;
-    /* padding-top: 10px; */
+    margin-top: 10px;
 }
 
 .modal-button {
@@ -339,11 +340,11 @@ header .container {
     padding-top: 10px;
     padding-right: 58px;
     padding-left: 58px;
-    margin-top: 40px;
+    margin-top: 30px;
     border-radius: 4px;
     margin-right: 164px;
     margin-left: 159px;
-    /* margin-bottom: 50px; */
+    margin-bottom: 50px;
     
 }
 
@@ -427,7 +428,9 @@ header .container {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #FFFFFF;
 }
 
@@ -713,6 +716,51 @@ header .container {
 
 .footer-svg {
     fill: currentColor;
+}
+
+
+.footer-subscribe {
+    margin-left: 93px;
+}
+
+.footer-input {
+    display: block;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: #2F303A;
+    border-radius: 4px;
+}
+
+.footer-input::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    padding-top: 15px;
+    padding-left: 16px;
+
+    display: flex;
+    align-items: center;
+}
+
+.footer-btn {
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    background: #2196F3;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 28px;
+    padding-right: 62px;
+    display: block;
 }
 
 .footer-section .container {
