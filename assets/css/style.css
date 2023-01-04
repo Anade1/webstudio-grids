@@ -93,7 +93,7 @@ header .container {
     text-decoration: none;
     
     margin-left: 55px;
-    transition: transform 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 100ms;
+    transition: color 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 100ms;
 }
 
 .header-contact {
@@ -110,6 +110,7 @@ header .container {
     text-decoration: none;
 
     margin-left: 55px;
+    transition: color 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 100ms;
 }
 
 
@@ -117,13 +118,11 @@ header .container {
 .header-text:hover {
     color: #2196F3;
     /* transition: all 0.4s ease; */
-    transition: transform 250ms cubic-bezier(0.215, 0.610, 0.355, 0.5);
-
 }
 
 .header-contact:hover {
     color: #2196F3;
-    transition: all 0.4s ease;
+    /* transition: all 0.4s ease; */
 }
 
 .header-svg-item {
@@ -206,6 +205,9 @@ header .container {
     top: 0;
     left: 0;
     z-index: 2;
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 100ms;
+
 }
 
 .modal-window {
@@ -218,6 +220,7 @@ header .container {
     left: 50%;
     z-index: 7;
     transform: translate(-50%, -50%);
+
 }
 
 .modal-svg {
@@ -544,11 +547,14 @@ header .container {
     width: 44px;
     border-radius: 50%;
     cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 100ms, color 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 100ms;
+
 }
 
 .team-item:hover {
-    transition: all 0.4s ease;
-    background: #2196F3;
+    /* transition: all 0.4s ease; */
+    background-color: #2196F3;
     color: #FFFFFF;
 }
 
@@ -594,11 +600,14 @@ header .container {
     color: #AFB1B8;
     cursor: pointer;
 
+    transition: color 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 100ms;
+
+
 }
 
 .svg-item:hover {
     color: #2196F3;
-    transition: all 0.4s ease;
+    /* transition: all 0.4s ease; */
     border: 1px solid #2196F3;
 }
 
@@ -703,10 +712,12 @@ header .container {
     align-items: center;
     color: #FFFFFF;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 100ms;
+
 }
 
 .footer-item:hover {
-    transition: all 0.4s ease;
+    /* transition: all 0.4s ease; */
     background-color: #2196F3;
 }
 
