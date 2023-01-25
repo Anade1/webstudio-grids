@@ -1,17 +1,7 @@
-ul, address {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+body {
+    font-family: 'Roboto'
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-h1, h2, h3, p  {
-    margin: 0;
-}
 
 
 .container {
@@ -22,4 +12,3 @@ h1, h2, h3, p  {
     margin-left: auto;
     /* outline: solid red; */
 }
-
