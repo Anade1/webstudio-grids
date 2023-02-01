@@ -34,7 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FFFFFF;
+    color: $title-color;
 }
 
 
@@ -52,7 +52,7 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #212121;
+    color: $paragraph-color;
 
     margin-bottom: 50px;
 }

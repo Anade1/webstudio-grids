@@ -1,7 +1,7 @@
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
-    background: #F5F4FA;
+    background: $item-color;
 }
 
 .team__title {
@@ -11,7 +11,7 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #212121;
+    color: $paragraph-color;
 
     margin-bottom: 50px;
 }
@@ -27,7 +27,7 @@
     padding-bottom: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    background-color: #FFFFFF;
+    background-color: $title-color;
     
 }
 
@@ -46,7 +46,7 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #212121;
+    color: $paragraph-color;
 
     margin-top: 30px;
     margin-bottom: 10px;
@@ -59,7 +59,7 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #757575;
+    color: $text-color;
 }
 
 
@@ -74,8 +74,8 @@
 .team__item__svg {
     margin-left: 10px;
     margin-top: 16px;
-    color: #AFB1B8;
-    background: #FFFFFF;
+    color: $svg-color;
+    background: $title-color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,8 +90,8 @@
 
 .team__item__svg:hover {
     /* transition: all 0.4s ease; */
-    background-color: #2196F3;
-    color: #FFFFFF;
+    background-color: $accent;
+    color: $title-color;
 }
 
 .team__icons {

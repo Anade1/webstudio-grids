@@ -7,7 +7,7 @@
     letter-spacing: 0.03em;
     list-style: none;
                 
-    color: #212121;
+    color: $paragraph-color;
             
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@
 }
             
 .filter__button {
-    background: #F5F4FA;
+    background: $item-color;
     cursor: pointer;
     border: none;
             
@@ -28,7 +28,7 @@
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: $paragraph-color;
             
     padding-top: 6px;
     padding-bottom: 6px;
@@ -41,7 +41,7 @@
 }
             
 .filter__button:hover {
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: $title-color;
+    background-color: $accent;
     /* transition: all 0.4s ease; */
 }

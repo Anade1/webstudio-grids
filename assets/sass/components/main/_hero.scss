@@ -17,7 +17,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     
-    color: #FFFFFF;
+    color: $title-color;
 
 
 }
@@ -30,8 +30,8 @@
 
     letter-spacing: 0.06em;
 
-    color: #FFFFFF;
-    background: #2196F3;
+    color: $title-color;
+    background: $accent;
     border: none;
     display: block;
     margin-left: auto;

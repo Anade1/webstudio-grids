@@ -1,14 +1,14 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    background: #2F303A;
+    background: $block-color;
     margin-top: 0;
     margin-bottom: 0;
 }
             
 .footer__logo {
     font-family: 'Raleway';
-    color: #FFFFFF;
+    color: $title-color;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -21,7 +21,7 @@
 
 .footer__logo__color {
     font-family: 'Raleway';
-    color: #2196F3;
+    color: $accent;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -35,7 +35,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: $title-color;
     margin-bottom: 9px;
 }
 
@@ -54,7 +54,7 @@
     cursor: pointer;
     
     
-    color: #757575;
+    color: $text-color;
     
     text-decoration: none;
 }
@@ -81,7 +81,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: $title-color;
     margin-bottom: 20px;
 }
 
@@ -98,7 +98,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FFFFFF;
+    color: $title-color;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 100ms;
 
@@ -106,7 +106,7 @@
 
 .footer__item__svg:hover {
     /* transition: all 0.4s ease; */
-    background-color: #2196F3;
+    background-color: $accent;
 }
 
 .footer__item__svg:nth-child(1) {
@@ -127,7 +127,7 @@
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    background: #2F303A;
+    background: $block-color;
     border-radius: 4px;
 }
 
@@ -151,8 +151,8 @@
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.06em;
-    background: #2196F3;
-    color: #FFFFFF;
+    background: $accent;
+    color: $title-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
     padding-top: 10px;

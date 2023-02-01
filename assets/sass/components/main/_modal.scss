@@ -18,7 +18,7 @@
 
 .modal__window {
     width: 528px;
-    background: #FFFFFF;
+    background: $title-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     position: absolute;
@@ -40,7 +40,7 @@
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    background: #FFFFFF;
+    background: $title-color;
     border: 1px solid rgba(0, 0, 0, 0.1);
     margin-top: 8px;
     margin-right: 8px;
@@ -48,7 +48,7 @@
 }
 
 .modal__button__close:hover {
-    color: #2196F3;
+    color: $accent;
     transition: all 0.4s ease;
 }
 
@@ -60,7 +60,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     
-    color: #212121;
+    color: $paragraph-color;
     
     justify-content: center;
     margin-bottom: 12px;
@@ -78,7 +78,7 @@
 }
 
 .modal__item:hover {
-    color: #2196F3;
+    color: $accent;
 }
 
 .modal__item:last-child {
@@ -96,7 +96,7 @@
 }
 
 .modal__form:hover {
-    color: #2196F3;
+    color: $accent;
 }
 
 .modal__icon {
@@ -154,8 +154,8 @@
 
     letter-spacing: 0.06em;
 
-    color: #FFFFFF;
-    background: #2196F3;
+    color: $title-color;
+    background: $accent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
 

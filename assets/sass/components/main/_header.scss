@@ -24,7 +24,7 @@ header .container {
 .header__color {
     
     font-family: 'Raleway';
-    color: #2196F3;
+    color: $accent;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -62,7 +62,7 @@ header .container {
     position: absolute;
     bottom: -33px;
     left: 0;
-    background-color: #2196F3;
+    background-color: $accent;
     border-radius: 5px;
     transition: 250ms;
     
@@ -77,7 +77,7 @@ header .container {
     line-height: 1.14;
     letter-spacing: 0.02em;
     cursor: pointer;
-    color: #212121;
+    color: $paragraph-color;
     position: relative;
     text-decoration: none;
     
@@ -94,7 +94,7 @@ header .container {
     cursor: pointer;
     
     
-    color: #757575;
+    color: $text-color;
     
     text-decoration: none;
 
@@ -105,12 +105,12 @@ header .container {
 
 
 .header__text:hover {
-    color: #2196F3;
+    color: $accent;
     /* transition: all 0.4s ease; */
 }
 
 .header__contact:hover {
-    color: #2196F3;
+    color: $accent;
     /* transition: all 0.4s ease; */
 }
 
@@ -118,11 +118,11 @@ header .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #757575;
+    color: $text-color;
 }
 
 .header__contact:hover {
-    color: #2196F3;
+    color: $accent;
     transition: all 0.4s ease;
 }
 
