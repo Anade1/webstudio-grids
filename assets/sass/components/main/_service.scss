@@ -1,23 +1,84 @@
 .service__paragraph {
     list-style: none;
-    display: flex;
     justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
 
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 1200px) {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .service__item::before {
     content: '';
-    width: 270px;
+    width: 450px;
     height: 120px;
-
     margin-bottom: 30px;
     background-color: $item-color;
     border-radius: 4px;
+    justify-content: center;
     background-repeat: no-repeat;
     background-position: center;
     display: block;
+
+    @media screen and (min-width: 768px) {
+
+        width: 354px;
+        height: 120px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 120px;
+    }
+}
+
+.setvice__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;  
+    }
+}
+
+.service__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+    letter-spacing: 0.03em;
+    margin-top: 10px;
 }
 
 .service__item:nth-child(1)::before {
@@ -34,8 +95,4 @@
 
 .service__item:nth-child(4)::before {
     background-image: url(../img/studio/astronaut.png);
-}
-
-.service__text {
-    margin-top: 10px;
 }
