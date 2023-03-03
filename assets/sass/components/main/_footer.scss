@@ -46,6 +46,45 @@
     flex-flow: column wrap;
 }
 
+.footer__main-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+
+
+    @media screen and (min-width: 480px) {
+        gap: 70px;
+    }
+
+    @media screen and (min-width: 768px) {
+        gap: 165px;
+    }
+   
+    @media screen and (min-width: 1200px) {
+        gap: 70px;
+    }
+   
+}
+
+.footer__main-item {
+    text-align: center;
+    justify-content: center;
+    
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+        // &:nth-child(1) {
+        //     margin-right: 60px;
+        // }
+
+        // &:nth-child(2) {
+        //     margin-right: 73px;
+        // }
+        
+    }
+}
+
 .footer__contact {
     font-weight: 500;
     font-size: 14px;
@@ -71,10 +110,10 @@
 
 .footer__app {
     display: block;
-    margin-left: 70px;
+    
 }
 
-.footer__title {
+.footer__title-join {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -87,10 +126,35 @@
 
 .footer__list__svg {
     display: flex;
+    gap: 10px;
+}
+
+.footer__submit-svg {
+    fill: $title-color;
+}
+
+.footer__title-connect {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $title-color;
+    margin-bottom: 20px;
+
+}
+
+.footer__submit-list {
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 12px;
+    }
+
 }
 
 .footer__item__svg {
-    margin-left: 10px;
     background: rgba(255, 255, 255, 0.1);
     height: 44px;
     width: 44px;
@@ -109,9 +173,9 @@
     background-color: $accent;
 }
 
-.footer__item__svg:nth-child(1) {
-    margin-left: 0;
-}
+// .footer__item__svg:nth-child(1) {
+
+// }
 
 .footer__icon {
     fill: currentColor;
@@ -119,7 +183,7 @@
 
 
 .footer-subscribe {
-    margin-left: 93px;
+
 }
 
 .footer-input {
@@ -129,6 +193,10 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: $block-color;
     border-radius: 4px;
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
 }
 
 .footer-input::placeholder {
@@ -160,6 +228,13 @@
     padding-left: 28px;
     padding-right: 62px;
     display: block;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
+    }
 }
 
 .footer .container {
