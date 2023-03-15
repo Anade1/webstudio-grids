@@ -1,4 +1,4 @@
-
+(() => {
 const refs = {
   openModalBtn: document.querySelector("[data-open-modal]"),
   closeModalBtn: document.querySelector("[data-close-modal]"),
@@ -17,3 +17,4 @@ function toggleModal() {
 function logBackdropClick() {
   console.log("Це клік в бекдроп");
 }
+})();

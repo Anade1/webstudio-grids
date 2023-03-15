@@ -18,9 +18,15 @@
 </head>
 <body>
 
-   <!-- <header class="header">
+   <header class="header">
                 <div class="container">
                     <a class="header__logo" href="./index.html"><span class="header__color">Web</span>Studio</a>
+                    
+                    <button class="header__menu-button" data-open-mobile-modal>
+                        <svg class="header__menu-button-svg" width="24px" height="16px">
+                            <use href="./assets/img/symbol-defs.svg#icon-menu"></use>
+                        </svg>
+                    </button>
     
                     <ul class="header__menu">
                         <li class="header__item">
@@ -37,7 +43,7 @@
     
                     </ul>
     
-                    <ul class="header__contacts__menu">
+                    <ul class="header__contacts-menu">
                         <li class="header__contacts">
                             <a class="header__contact" href="mailto:info@example.com">
                                 <svg class="header__icon" width="16" height="12">
@@ -56,9 +62,78 @@
                             </a>
                         </li>
                     </ul>
+
+                    <div class="modal__backdrop mobile__is-hidden" data-mobile-backdrop>
+                        <form class="mobile__modal-window">
+                            <button class="mobile__button-close" data-close-mobile-modal>
+                                <svg class="mobile__icon-close">
+                                    <use href="./assets/img/symbol-defs.svg#icon-close"></use>
+                                </svg>
+                            </button>
+
+                            <ul class="mobile__menu">
+                                <li class="mobile__item">
+                                    <a class="mobile__text current" href="./index.html">Студія</a>
+                                </li>
+            
+                                <li class="mobile__item">
+                                    <a class="mobile__text" href="./portfolio.html">Портфоліо</a>
+                                </li>
+            
+                                <li class="mobile__item">
+                                     <a class="mobile__text" href="#">Контакти</a>
+                                </li>
+            
+                            </ul>
+
+                            <ul class="mobile__contacts-menu">
+                                <li class="mobile__contacts">
+                                    <a class="mobile__contact" href="mailto:info@example.com">
+                                       <span>info@example.com</span>
+                                    </a>
+                                </li>
+                                
+                                <li class="mobile__contacts">
+                                    <a class="mobile__contact" href="tel:+380991111111">
+                                        <span>+38 099 111 11 11</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="mobile__social-menu">
+                                <li class="mobile__social-item">
+                                    <p class="mobile__social-text">Instagram</p>
+                                </li>
+
+                                <li class="mobile__social-item">
+                                    <div class="mobile__grey-cross"></div>
+                                </li>
+
+                                <li class="mobile__social-item">
+                                    <p class="mobile__social-text">Twitter</p>
+                                </li>
+
+                                <li class="mobile__social-item">
+                                    <div class="mobile__grey-cross"></div>
+                                </li>
+
+                                <li class="mobile__social-item">
+                                    <p class="mobile__social-text">Facebook</p>
+                                </li>
+
+                                <li class="mobile__social-item">
+                                    <div class="mobile__grey-cross"></div>
+                                </li>
+
+                                <li class="mobile__social-item">
+                                    <p class="mobile__social-text">LinekedIn</p>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
                 </div>
                 
-            </header> -->
+            </header>
             
             
     <main>
@@ -455,35 +530,12 @@
                     </div>
                 </li>
             </ul>
-            
-            
-            
-
-            
-            
-            
         </div>
     </footer>
 
-    <script>
-        const refs = {
-          openModalBtn: document.querySelector("[data-open-modal]"),
-          closeModalBtn: document.querySelector("[data-close-modal]"),
-          backdrop: document.querySelector("[data-backdrop]"),
-        };
-  
-        refs.openModalBtn.addEventListener("click", toggleModal);
-        refs.closeModalBtn.addEventListener("click", toggleModal);
-  
-        refs.backdrop.addEventListener("click", logBackdropClick);
-  
-        function toggleModal() {
-          refs.backdrop.classList.toggle("is-hidden");
-        }
-  
-        function logBackdropClick() {
-          console.log("Це клік в бекдроп");
-        }
-      </script>
+
+    <script src="./assets/js/mobile-modal.js"></script>
+
+    <script src="./assets/js/modal.js"></script>
 </body>
 </html>
