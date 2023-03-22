@@ -202,6 +202,8 @@ header .container {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
+  opacity: 1;
   background-color: white;
 }
 
@@ -211,6 +213,7 @@ header .container {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 7;
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
   background-color: #FFFFFF;
@@ -219,6 +222,75 @@ header .container {
 .mobile__is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.mobile__button-close {
+  margin-left: 425px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.mobile__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mobile__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mobile__contact {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobile__contact-large {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mobile__social-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mobile__social-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .hero {
