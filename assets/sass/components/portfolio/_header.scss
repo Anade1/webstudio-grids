@@ -126,3 +126,26 @@ header .container {
     margin-right: 10px;
     fill: currentColor;
 }
+
+
+
+
+
+
+.header__line {
+    width: 480px;
+    height: 0.5px;
+    color: #ECECEC;
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        height: 0.5px;
+        color: #ECECEC;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1600px;
+        height: 0.5px;
+        color: #ECECEC;
+    }
+}
