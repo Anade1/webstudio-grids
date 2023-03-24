@@ -311,6 +311,26 @@ header .container {
   display: flex;
 }
 
+.header__line {
+  width: 480px;
+  height: 0.5;
+  color: #ECECEC;
+}
+@media screen and (min-width: 768px) {
+  .header__line {
+    width: 768px;
+    height: 0.5;
+    color: #ECECEC;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__line {
+    width: 1600px;
+    height: 0.5;
+    color: #ECECEC;
+  }
+}
+
 .hero {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/studio/hero.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/studio/hero.jpg);
@@ -660,15 +680,17 @@ header .container {
 }
 @media screen and (min-width: 768px) {
   .service__paragraph {
-    display: block;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
   .service__paragraph {
     list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -677,16 +699,9 @@ header .container {
   }
 }
 
-.service__item {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-
 .service__item::before {
   content: "";
-  width: 450px;
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
   background-color: #F5F4FA;
@@ -744,13 +759,17 @@ header .container {
 }
 
 .service__text {
+  margin-top: 10px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  text-align: left;
   letter-spacing: 0.03em;
-  margin-top: 10px;
+  color: #757575;
+  margin-bottom: 30px;
+}
+.service__text:last-child {
+  margin-bottom: 0;
 }
 
 .service__item:nth-child(1)::before {
