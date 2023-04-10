@@ -109,21 +109,21 @@
 
 .service__item:nth-child(1)::before {
     // background-image: url(../img/studio/antenna.png);
-    background-image: url(../../../img/studio/antenna.png);
+    background-image: url(../assets/img/studio/antenna.png);
     background-repeat: no-repeat;
 }
 
 .service__item:nth-child(2)::before {
-    background-image: url(../img/studio/clock.png);
+    background-image: url(../assets/img/studio/clock.png);
     background-repeat: no-repeat;
 }
 
 .service__item:nth-child(3)::before {
-    background-image: url(../img/studio/diagram.png);
+    background-image: url(../assets/img/studio/diagram.png);
     background-repeat: no-repeat;
 }
 
 .service__item:nth-child(4)::before {
-    background-image: url(../img/studio/astronaut.png);
+    background-image: url(../assets/img/studio/astronaut.png);
     background-repeat: no-repeat;
 }

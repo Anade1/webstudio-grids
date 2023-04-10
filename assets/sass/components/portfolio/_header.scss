@@ -52,6 +52,14 @@ header .container {
 
     padding-top: 32px;
     padding-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .current::after {
