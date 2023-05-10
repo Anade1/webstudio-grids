@@ -39,6 +39,8 @@ header .container {
 
     padding-top: 32px;
     padding-bottom: 32px;
+
+    @include grids-list(50px);
 }
 
 .header__item {
@@ -52,6 +54,8 @@ header .container {
 
     padding-top: 32px;
     padding-bottom: 32px;
+
+    @include grids-list(30px);
 
     @media screen and (min-width: 768px) {
         display: block;

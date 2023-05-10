@@ -5,6 +5,8 @@
     flex-wrap: wrap;
 
     padding-bottom: 94px;
+
+    @include grids-list(30px);
 }
 
 .project__img {

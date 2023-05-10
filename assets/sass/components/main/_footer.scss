@@ -44,6 +44,8 @@
     list-style: none;
     display: flex;
     flex-flow: column wrap;
+
+    @include grids-list(10px);
 }
 
 .footer__main-list {
@@ -53,6 +55,7 @@
     text-align: center;
     justify-content: center;
 
+    @include grids-list(60px);
 
     @media screen and (min-width: 480px) {
         gap: 70px;
@@ -127,6 +130,8 @@
 .footer__list__svg {
     display: flex;
     gap: 10px;
+
+    @include grids-list(10px);
 }
 
 .footer__submit-svg {

@@ -46,6 +46,8 @@ header .container {
     @media screen and (min-width: 768px) {
         display: flex;
     }
+
+    @include grids-list(52px);
 }
 
  .header__menu-button {
@@ -68,6 +70,7 @@ header .container {
     padding-top: 32px;
     padding-bottom: 32px;
 
+    @include grids-list(30px);
 
     @media screen and (min-width: 768px) {
         display: block;

@@ -97,6 +97,8 @@
 .modal__list {
     padding-left: 40px;
     padding-right: 40px;
+
+    @include grids-list(10px);
 }
 
 .modal__item {

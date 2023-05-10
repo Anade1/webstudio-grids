@@ -8,6 +8,8 @@
     list-style: none;
     display: flex;
     flex-flow: column wrap;
+
+    @include grids-list(10px);
 }
             
 .footer__contact {
@@ -88,6 +90,8 @@
 
 .footer__list__svg {
     display: flex;
+
+    @include grids-list(10px);
 }
 
 .footer__item__svg {
@@ -131,6 +135,8 @@
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+
+    @include grids-list(60px);
 
 
     @media screen and (min-width: 480px) {

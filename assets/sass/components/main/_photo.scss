@@ -6,6 +6,8 @@
     list-style: none;
     display: flex;
     justify-content: center;
+
+    @include grids-list(30px);
 }
 
 .photo__item {
