@@ -13,6 +13,8 @@
 .photo__item {
     margin-left: 30px;
     position: relative;
+
+    @include grids-item(3, 30px);
 }
 
 .photo__li--item:hover::before {

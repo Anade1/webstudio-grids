@@ -50,6 +50,8 @@
 
     position: relative;
     overflow: hidden;
+
+    @include grids-item(9, 30px);
 }
 
 .project__item:hover>.project__overlay {

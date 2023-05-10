@@ -30,6 +30,8 @@
     // justify-content: center;
     // text-align: center;
     width: 100%;
+
+    @include grids-item(4, 30px);
    
     @media screen and (min-width: 480px) {
         width: 450px;

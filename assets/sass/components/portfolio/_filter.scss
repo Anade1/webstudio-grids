@@ -17,6 +17,10 @@
 
     @include grids-list(8px);
 }
+
+.filter__item {
+    @include grids-item(5, 8px);
+}
             
 .filter__button {
     background: $item-color;

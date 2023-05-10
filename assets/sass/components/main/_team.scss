@@ -54,6 +54,9 @@
     margin-bottom: 30px;
     padding-bottom: 24px;
 
+
+    @include grids-item(4, 30px);
+
     @media screen and (min-width: 768px) {
         
     }
